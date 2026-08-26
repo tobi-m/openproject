@@ -1,0 +1,18 @@
+# Konfiguration fuer openproject_department_usercount.py
+# Java-style properties (key=value). Kommentarzeilen beginnen mit # oder !
+# Zum Verwenden diese Datei nach "config.properties" kopieren und ausfuellen.
+
+# --- Pflicht ---
+op.base.url=https://openproject.example.com
+op.api.key=DEIN_API_TOKEN
+
+# --- Optional ---
+# Basic-Auth-Benutzername (Default: apikey) - nur aendern, wenn die Instanz das erfordert
+op.api.user=apikey
+
+# Name des Projektattributs, das die Abteilung enthaelt (Default: Abteilung)
+op.department.attr=Abteilung
+
+# Lokaler Winfoom-Proxy (Default: http://localhost:3129).
+# Zum Arbeiten ohne Proxy den Wert leer lassen:  op.proxy.url=
+op.proxy.url=http://localhost:3129
