@@ -10,8 +10,8 @@ op.api.key=DEIN_API_TOKEN
 # Basic-Auth-Benutzername (Default: apikey) - nur aendern, wenn die Instanz das erfordert
 op.api.user=apikey
 
-# Name des Projektattributs, das die Abteilung enthaelt (Default: Abteilung)
-op.department.attr=Abteilung
+# Name des Projektattributs, das die Abteilung enthaelt (Default: KM-Nummer)
+op.department.attr=KM-Nummer
 
 # Lokaler Winfoom-Proxy (Default: http://localhost:3129).
 # Zum Arbeiten ohne Proxy den Wert leer lassen:  op.proxy.url=
