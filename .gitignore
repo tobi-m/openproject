@@ -1,0 +1,9 @@
+# Lokale Konfiguration mit Zugangsdaten - niemals einchecken.
+# Vorlage ist config.properties.example
+config.properties
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
