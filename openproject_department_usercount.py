@@ -228,9 +228,13 @@ def main():
     active_ids = active_user_ids()
     project_ids, users = count_users_for_department(department, field_key, active_ids)
 
-    print(f"Abteilung:           {department}")
-    print(f"Projekte:            {len(project_ids)} -> {project_ids}")
-    print(f"Abrechenbare Nutzer: {len(users)}")
+    # Beschriftung folgt dem konfigurierten Attribut (op.department.attr),
+    # Spaltenbreite richtet sich nach der laengsten Beschriftung.
+    labels = (f"{attribute_name}:", "Projekte:", "Abrechenbare Nutzer:")
+    width = max(len(label) for label in labels)
+    print(f"{labels[0]:<{width}} {department}")
+    print(f"{labels[1]:<{width}} {len(project_ids)} -> {project_ids}")
+    print(f"{labels[2]:<{width}} {len(users)}")
 
     # Anschluss an die Billing-DB (siehe frueheres Datenmodell), z. B.:
     # from datetime import date
